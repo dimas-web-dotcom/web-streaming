@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLONING WEB MOVIEKU</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <section>
+      <header class="flex justify-between p-5 box-border bg-zinc-800 items-center">
+        <div class="gap-2 flex items-center">
+          <div class="nav space-y-2 oc hover:cursor-pointer md:hidden">
+            <div class="w-8 h-0.5 bg-gray-600 group-hover:bg-slate-300"></div>
+            <div class="w-8 h-0.5 bg-gray-600 group-hover:bg-slate-300"></div>
+            <div class="w-8 h-0.5 bg-gray-600 group-hover:bg-slate-300"></div>
+          </div>
+          <div>
+            <h1 class="font-extrabold text-xl text-white">MOVIEKU</h1>
+          </div>
+        </div>
+        <nav class="hidden md:block">
+          <ul class="flex justify-around gap-5 text-zinc-400">
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Home</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Series</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Ongoing</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Advanced Search</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Bookmark</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Link Rusak</li>
+            <li class="hover:text-zinc-100 transition duration-500 cursor-pointer">Movieku.Biz</li>
+          </ul>
+        </nav>
+        <div class="search md:hidden hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+
+        <div class="hidden md:block">
+          <div class="searchMe flex">
+            <form action="">
+              <div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                  <style>
+                    svg {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg> -->
+              </div>
+              <div>
+                <input type="text" placeholder="Search" class="outline-none px-5 py-2 rounded-full bg-slate-500" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <nav id="nav" class="bg-[#171616] text-teal-500 text-sm p-5 hidden">
+        <ul class="">
+          <li class="border-b-4 border-black cursor-pointer">Home</li>
+          <li class="border-b-4 border-black cursor-pointer">Series</li>
+          <li class="border-b-4 border-black cursor-pointer">Ongoing</li>
+          <li class="border-b-4 border-black cursor-pointer">Advanced Search</li>
+          <li class="border-b-4 border-black cursor-pointer">Bookmark</li>
+          <li class="border-b-4 border-black cursor-pointer">Link Rusak</li>
+          <li class="border-b-4 border-black cursor-pointer">Movieku.Biz</li>
+        </ul>
+      </nav>
+
+      <div class="up-search hidden bg-zinc-800">
+        <form action="">
+          <input type="text" class="bg-zinc-800 outline-none px-3 py-2 text-zinc-200" placeholder="Search..." />
+        </form>
+      </div>
+    </section>
+
+    <!-- section hot updates -->
+    <section class="bg-zinc-900 p-2 box-border">
+      <div class="container p-3">
+        <div class="bg-sky-400 p-5 w-full rounded-md">
+          <!-- <p class="bg-zinc-800 block">Hot Updates</p> -->
+        </div>
+
+        <div class="bg-zinc-900 p-2 w-1/3 md:w-1/6 rounded-md ml-3 relative bottom-7">
+          <p class="font-bold uppercase text-white text-center text-sm">HOT UPDATES</p>
+        </div>
+      </div>
+
+      <div class="container p-3 grid grid-cols-2 gap-3 md:grid-cols-8">
+        <div class="">
+          <img src="img/1.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Orphan: First Kill (2022)</p>
+        </div>
+
+        <div class="">
+          <img src="img/2.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Werewolf by Night (2022)</p>
+        </div>
+        <div class="">
+          <img src="img/3.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">The Equalizer 3 (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/4.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">A Murder at the End of the World (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/5.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Joy Ride (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/6.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Believer (2018)</p>
+        </div>
+        <div class="">
+          <img src="img/7.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Goosebumps (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/8.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Quiz Lady (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/9.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">LEGO Marvel Avengers: Code Red (2023)</p>
+        </div>
+        <div class="">
+          <img src="img/10.webp" alt="" srcset="" class="w-full rounded-md" />
+
+          <p class="p-2 font-medium text-white text-center">Hell House LLC Origins: The Carmichael Manor (2023)</p>
+        </div>
+      </div>
+    </section>
+    <!-- hot updates end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
